@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" type="image/png" href="logo.png" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="h">
+      <img src="logo.png" alt="Logo" height="40" style="margin-right: 10px;">
+      <p class="title red">Attendance</p>
+      <p class="title gray">Tracker</p>
+    </div>
+  </header>
+
+  <div class="content">
+    <p style="text-align: center;">Calculate your attendance for the next 28 days</p>
+  </div>
+
+  <div class="omain">
+    <div class="periods">
+      <div class="noofperiods">
+        <p>Number of periods per day</p>
+        <select class="custom-select">
+          <option value="7">7</option>
+          <option value="10">10</option>
+          <option value="9">9</option>
+          <option value="8">8</option>
+          <option value="6">6</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+      <div class="posted">
+        <p>Is today's attendance posted?</p>
+        <label class="switch">
+          <input type="checkbox" id="singleRadio">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <form id="attendanceForm" class="submain">
+      <div class="div1">
+        <label for="inp1">Periods attended</label>
+        <input type="number" id="inp1" min="0" required>
+      </div>
+
+      <div class="div2">
+        <label for="inp2">Total periods held</label>
+        <input type="number" id="inp2" min="0" required>
+      </div>
+
+      <div class="div3">
+        <label for="inp3">Leave dates</label>
+        <input type="text" id="inp3" placeholder="Eg: 12 15 7">
+      </div>
+
+      <div class="div4">
+        <label for="inp4">Holiday dates
+          <pre>(other than Sundays)</pre>
+        </label>
+        <input type="text" id="inp4" placeholder="Eg: 14 26">
+      </div>
+
+      <div class="buttons">
+        <button type="submit" class="b1">
+          Submit <i class="fa-solid fa-check"></i>
+        </button>
+        <button type="reset" class="b2">
+          Reset <i class="fa-solid fa-arrows-rotate"></i>
+        </button>
+      </div>
+    </form>
+  </main>
+
+  <div class="status"></div>
+
+  <section class="foot1">
+    <h2>Tutorial:</h2>
+    <p>1. Make sure about today's attendance. If today's attendance is already updated then turn on the button.</p>
+    <img src="IMG_20241002_183526.jpg" alt="Step 1" class="images">
+
+    <p>2. Only enter dates that you are planning to put leave separated by space.</p>
+    <img src="IMG_20241002_183502.jpg" alt="Step 2" class="images">
+
+    <p>3. Sundays are by default considered as holidays. Only enter the dates of holiday dates (Eg: National holidays, Second Saturdays).</p>
+    <img src="IMG_20241002_183540.jpg" alt="Step 3" class="images">
+  </section>
+
+  <footer class="foot">
+    <img src="logo.png" alt="Logo" height="50" width="50"
+      style="border: 2px solid #fff;">
+    <p><a href="mailto:siddemanilkumar@gmail.com">siddemanilkumar@gmail.com</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

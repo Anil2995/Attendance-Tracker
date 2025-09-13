@@ -1,0 +1,279 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  color: #222;
+}
+
+header {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(60, 60, 120, 0.08);
+  padding: 16px 0;
+}
+
+.h {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: clamp(18px, 2.5vw, 23px);
+  font-weight: 600;
+  margin: 0;
+}
+
+.title.red {
+  color: #e63946;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0 8px 0 0;
+}
+
+.title.gray {
+  color: #457b9d;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Content */
+.content {
+  margin: 24px auto;
+  max-width: 600px;
+  font-size: 1.2rem;
+}
+
+/* Periods section */
+.omain {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.periods {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(70, 130, 180, 0.10);
+  padding: 24px 32px;
+  display: flex;
+  gap: 32px;
+}
+
+.periods p {
+  color: rgb(201, 201, 201);
+  margin-bottom: 8px;
+}
+
+.noofperiods p,
+.posted p {
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.custom-select {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #bfc0c0;
+  font-size: 1rem;
+  background: #f1faee;
+  color: #222;
+}
+
+/* Switch button */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #bfc0c0;
+  border-radius: 24px;
+  transition: .4s;
+}
+
+.switch input:checked + .slider {
+  background-color: #457b9d;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+/* Main form */
+main {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.submain {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(70, 130, 180, 0.10);
+  padding: 32px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 320px;
+  max-width: 400px;
+}
+
+.submain label {
+  font-weight: 500;
+  color: #222;
+}
+
+.submain input[type="number"],
+.submain input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #bfc0c0;
+  font-size: 1rem;
+  margin-top: 6px;
+  background: #f1faee;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+button {
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.b1 {
+  background: #457b9d;
+  color: #fff;
+}
+
+.b1:hover {
+  background: #1d3557;
+}
+
+.b2 {
+  background: #f1faee;
+  color: #222;
+  border: 1px solid #bfc0c0;
+}
+
+.b2:hover {
+  background: #e63946;
+  color: #fff;
+}
+
+/* Status */
+.status {
+  text-align: center;
+  margin: 24px auto;
+  font-size: 1.2rem;
+  color: #e63946;
+  font-weight: 600;
+}
+
+/* Tutorial */
+.foot1 {
+  background: #f1faee;
+  padding: 32px 0;
+  margin-top: 32px;
+  text-align: center;
+}
+
+.foot1 h2 {
+  color: #457b9d;
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.foot1 p {
+  color: #222;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.images {
+  max-width: 320px;
+  border-radius: 12px;
+  margin: 12px auto 24px;
+  box-shadow: 0 2px 8px rgba(70, 130, 180, 0.10);
+  display: block;
+}
+
+/* Footer */
+footer.foot {
+  background: #457b9d;
+  color: #fff;
+  padding: 24px 0;
+  text-align: center;
+  margin-top: 32px;
+}
+
+footer.foot img {
+  margin-bottom: 8px;
+}
+
+footer.foot a {
+  color: #f1faee;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+  .periods,
+  .submain {
+    padding: 16px 8px;
+    flex-direction: column;
+    min-width: unset;
+    max-width: 100%;
+  }
+
+  .omain,
+  main {
+    margin: 0 8px;
+  }
+
+  .images {
+    max-width: 90vw;
+  }
+}
