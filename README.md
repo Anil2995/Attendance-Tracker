@@ -1,38 +1,49 @@
 # 📈 Smart Attendance Tracker
 
-> A modern, real-time attendance forecasting tool.
+> **Forecast your academic attendance with precision.**
+> A powerful, real-time tool featuring a premium Glassmorphism UI, interactive charts, and intelligent date parsing.
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Version](https://img.shields.io/badge/version-2.0-purple.svg)
+[![Live Demo](https://img.shields.io/badge/demo-live-success.svg?style=for-the-badge&logo=github)](https://anil2995.github.io/Attendance-Tracker/) 
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
-This project has been completely revamped to provide a seamless user experience, allowing students and professionals to predict their attendance percentage for the upcoming month (28 days) based on current data, planned leaves, and holidays.
+<p align="center">
+  <img src="screenshots/desktop_preview.png" alt="Desktop Preview" width="100%">
+</p>
+
+## 🚀 Overview
+
+**Attendance Tracker** solves the anxiety of "Can I take a leave tomorrow?". 
+It goes beyond simple calculation by projecting your attendance percentage for the next **28 days**, accounting for:
+*   Daily Schedule (Periods per day)
+*   Sundays (Auto-detected)
+*   Holidays
+*   Planned Leaves
+
+## 📸 Screenshots
+
+| **Interactive Dashboard** | **Smart Forecasts** |
+|:---:|:---:|
+| <img src="screenshots/desktop_preview.png" width="400"> | <img src="screenshots/desktop_results.png" width="400"> |
+| *Clean, Dark Mode Interface* | *Real-time Trends & Daily Status* |
+
+<p align="center">
+  <b>📱 Fully Responsive Mobile Design</b><br>
+  <img src="screenshots/mobile_preview.png" width="300">
+</p>
 
 ## ✨ Key Features
 
-### 🎨 Premium User Interface
-- **Glassmorphism Design**: Sleek, dark, semi-transparent aesthetics with dynamic background animations.
-- **Deep Color Palette**: Carefully curated deep blue and purple gradients for a comfortable yet striking dark mode.
-- **Responsive Layout**: Fully optimized for mobile, tablet, and desktop screens.
-
-### ⚡ Smart & Efficient
-- **Instant Calculation**: Logic runs instantly to project attendance over a rolling 28-day window.
-- **Data Persistence**: Uses **LocalStorage** to automatically save your input. Your data remains safe even if you close the browser.
-- **Auto-Sunday Detection**: Intelligent algorithm automatically detects Sundays and excludes them from working days.
-- **Visual Analytics**: Integrated **Chart.js** to render a beautiful area chart showing your attendance trend over the projected period.
+*   **🎨 Premium Glassmorphism UI**: A visually stunning interface with deep gradients, animated backgrounds, and glass-panel aesthetics.
+*   **⚡ Real-Time Visualization**: Powered by **Chart.js**, see your attendance trend line instantly update as you type.
+*   **💾 Auto-Save**: Never lose your data. Input values are persisted locally so you can pick up exactly where you left off.
+*   **🧠 Intelligent Logic**: Automatically filters out Sundays and processes complex leave dates seamlessly.
 
 ## 🛠️ How to Use
 
-1.  **Inputs**:
-    *   **Periods Per Day**: Configurable daily schedule (4-10 periods).
-    *   **Current Status**: Input your current *Attended* vs *Total Held* classes.
-    *   **Smart Date Parsing**: Simply enter dates (e.g., `12 15`) for Leaves or Holidays.
-2.  **Processing**:
-    *   The algorithm iterates through the next 28 days.
-    *   It checks each day against Holidays, Sundays, and Planned Leaves.
-    *   It dynamically updates the running total and percentage.
-3.  **Output**:
-    *   Generates a daily breakdown card indicating status.
-    *   Plots a live graph for visual analysis.
+1.  ** Configure**: Select periods per day (e.g., 7).
+2.  ** Input**: Enter your current attendance (e.g., 50/60).
+3.  ** Plan**: Type dates for leaves (e.g., `12 15`) and holidays.
+4.  ** Visualize**: Click **Calculate** to see your 28-day forecast.
 
 ## 👥 Author
 
